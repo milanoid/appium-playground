@@ -25,7 +25,7 @@ public class AppiumLocalDemo {
 
         String birthNumberPrefix = "965609";
         String birthNumberSuffix = "3227";
-        String email = "milan.vojnovic+test123@zonky.cz";
+        String email = "user@email.cz";
 
 
         // 1. Vyplnit poptavku
@@ -43,7 +43,7 @@ public class AppiumLocalDemo {
 
         // 5. Jak se jmenujete?
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/TextInputLayout[1]/android.widget.FrameLayout/android.widget.EditText")))
-                .sendKeys("Milan");
+                .sendKeys("Jan");
 
         driver.hideKeyboard();
 
@@ -70,7 +70,7 @@ public class AppiumLocalDemo {
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElementByAndroidUIAutomator("new UiSelector().resourceId(\"cz.zonky.beta:id/edit_password\")")))
                 .click();
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElementByAndroidUIAutomator("new UiSelector().resourceId(\"cz.zonky.beta:id/edit_password\")")))
-                .sendKeys("Zebra2014");
+                .sendKeys("password");
         driver.hideKeyboard();
 
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.CheckBox")))
